@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp" android:layout_height="300dp"
+    android:background="#A09999"
+    android:layout_gravity="center">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/alert_back">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Booking"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:id="@+id/title"
+            android:layout_marginTop="5dp"
+            android:textColor="#161515"
+            android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_close_alert"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="2dp"
+        android:id="@+id/close_alert"
+        android:layout_marginRight="2dp"/>
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext"
+        android:id="@+id/change_date"
+        android:layout_below="@id/close_alert"
+        android:layout_centerHorizontal="true"
+        android:hint="Change Date "
+        android:textAlignment="center"
+        android:textColorHint="#000"
+        android:textColor="#000"
+        android:layout_marginTop="40dp"/>
+    <EditText
+        android:layout_width="250dp"
+        android:id="@+id/change_location"
+        android:background="@drawable/edittext"
+        android:layout_below="@id/change_date"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:textColorHint="#000"
+        android:textColor="#000"
+        android:hint="Change Locatoin "
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/change_btn"
+        android:layout_below="@id/change_location"
+        android:text="change"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/cancel_btn"
+        android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</RelativeLayout>

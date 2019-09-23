@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Login"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/login">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/wallpaper2"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="100dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="cursive"
+                android:text="AtWork"
+                android:textColor="#EEF8F5F5"
+                android:textSize="60dp"
+                android:textStyle="bold" />
+        <EditText
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="40dp"
+            android:hint="  Email"
+            android:textSize="12dp"
+            android:textColor="#F1EDED"
+            android:maxLines="1"
+            android:textColorHint="#F8F5F5"
+            android:id="@+id/email"
+            android:layout_width="300dp"
+            android:drawableLeft="@drawable/ic_person"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="  Password"
+            android:textSize="12dp"
+            android:textColor="#F1EDED"
+            android:maxLines="1"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/ic_password"
+            android:textColorHint="#F8F5F5"
+            android:id="@+id/pass"/>
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:background="@drawable/reg_button"
+                android:textStyle="bold"
+                android:textSize="12dp"
+                android:id="@+id/login"
+                android:textColor="#AE030303"
+                android:layout_marginTop="25dp"
+                android:layout_gravity="center_horizontal"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No account yet?"
+                android:id="@+id/link"
+                android:textSize="12dp"
+                android:textColor="#F7F3F3"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_horizontal"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create One"
+                android:id="@+id/lgn"
+                android:textSize="12dp"
+                android:textColor="#F7F3F3"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_horizontal"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:id="@+id/frame"
+        android:background="@color/transparent_grey">
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:theme="@style/AppTheme"/>
+    </FrameLayout>
+
+
+</RelativeLayout>

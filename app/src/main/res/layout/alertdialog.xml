@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/alertback">
+<EditText
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:drawableLeft="@drawable/ic_alertperson"
+    android:drawablePadding="8dp"
+    android:id="@+id/aname"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="40dp"
+    android:hint="Name" />
+    <EditText
+        android:layout_width="250dp"
+        android:drawableLeft="@drawable/ic_alertmail"
+        android:drawablePadding="8dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/aname"
+        android:layout_marginTop="20dp"
+        android:id="@+id/aemail"
+        android:hint="Email" />
+    <EditText
+        android:layout_width="250dp"
+        android:drawableLeft="@drawable/ic_alertaddress"
+        android:drawablePadding="8dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/aemail"
+        android:layout_marginTop="20dp"
+        android:id="@+id/aaddress"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Address" />
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/ic_alertphone"
+        android:drawablePadding="8dp"
+        android:layout_below="@id/aaddress"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="phone"
+        android:layout_marginTop="20dp"
+        android:id="@+id/aphone"
+        android:hint="Phone" />
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/ic_alertpass"
+        android:drawablePadding="8dp"
+        android:layout_below="@id/aphone"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:inputType="textPassword"
+        android:id="@+id/apass"
+        android:hint="Change password" />
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:id="@+id/aupdate"
+        android:background="@drawable/button"
+        android:layout_below="@id/apass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="35dp"/>
+</RelativeLayout>
